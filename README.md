@@ -12,7 +12,7 @@ Alipress Cargo is a project aimed at providing simple, easy, and fast shipping s
 
 ## Demo
 
-You can view a live demo of the project [here](https://dakirzakaria1.github.io/alipress/).
+You can view a live demo of the project [here](https://alipress.vercel.app/).
 
 ## Features
 
