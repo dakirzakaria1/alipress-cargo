@@ -1,5 +1,15 @@
 :root {
   --container-width: 1210px;
+  --white-color: #ffffff;
+  --primary-color: #593de4;
+  --background-gradient: linear-gradient(180deg, #00000000, #0000004d 100%);
+  --secondary-background-color: #c4c4c4;
+  --hero-background-color: #ffffff;
+  --input-background-color: #efefef;
+  --input-border-color: #efefef;
+  --input-focus-outline-color: #000000;
+  --button-hover-background-color: transparent;
+  --font-family: "Inter", sans-serif;
 }
 * {
   padding: 0;
@@ -21,11 +31,11 @@ ul {
   margin-inline: auto;
 }
 .inter-font {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-family);
 }
 .button {
-  color: #ffffff;
-  font-family: "Inter", sans-serif;
+  color: var(--white-color);
+  font-family: var(--font-family);
   font-weight: 500;
   text-align: center;
   padding: 14px 45px;
@@ -33,20 +43,20 @@ ul {
   transition: background 0.5s ease, color 0.5s ease;
 }
 .login-button {
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white-color);
   background-color: transparent;
 }
 .login-button:hover {
-  background-color: #ffffff;
-  color: #593de4;
+  background-color: var(--white-color);
+  color: var(--primary-color);
 }
 .join-button {
   border-radius: 4px;
-  border: 1px solid #593de4;
-  background-color: #593de4;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
 }
 .join-button:hover {
-  background-color: transparent;
+  background-color: var(--button-hover-background-color);
 }
 .header {
   width: 100%;
@@ -60,7 +70,7 @@ ul {
 }
 .header-logo {
   text-align: center;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .header-logo span {
   display: block;
@@ -78,10 +88,12 @@ ul {
   gap: 17px;
 }
 .hero {
-  background: linear-gradient(180deg, #00000000, #0000004d 100%),
-    url(./images/hero-background-image.png) center/cover no-repeat, #c4c4c4;
+  background: var(--background-gradient),
+    url(./images/hero-background-image.png) center/cover no-repeat,
+    var(--secondary-background-color);
 }
 .hero-container {
+  min-height: 100dvh;
   padding: 171px 0 214px;
   display: flex;
   justify-content: space-between;
@@ -89,7 +101,7 @@ ul {
 }
 .hero-container h1 {
   flex-basis: 456px;
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 50px;
   line-height: 61px;
 }
@@ -97,7 +109,7 @@ ul {
   flex-basis: 629px;
   border-radius: 10px;
   box-shadow: 0px 4px 30px 0px #00000040;
-  background-color: #ffffff;
+  background-color: var(--hero-background-color);
   padding: 52px 25px 55px;
 }
 .hero-container form h2 {
@@ -115,7 +127,7 @@ ul {
 }
 .inputs-list-wrapper label {
   display: block;
-  color: #593de4;
+  color: var(--primary-color);
   font-size: 12px;
 }
 .inputs-list-wrapper input {
@@ -124,11 +136,11 @@ ul {
   margin-top: 11px;
   padding: 12px 20px 12px 55px;
   border-radius: 10px;
-  border: 1px solid #efefef;
-  background: #efefef 20px center/20px 20px no-repeat;
+  border: 1px solid var(--input-border-color);
+  background: var(--input-background-color) 20px center/20px 20px no-repeat;
 }
 .inputs-list-wrapper input:focus {
-  outline: 1px solid #000000;
+  outline: 1px solid var(--input-focus-outline-color);
 }
 #pickup-address {
   background-image: url(./images/pickup-address-icon.png);
@@ -145,14 +157,14 @@ ul {
 .hero-container .button {
   display: block;
   margin: 0 0 0 auto;
-  border: 1px solid #593de4;
+  border: 1px solid var(--primary-color);
   cursor: pointer;
-  background: #593de4 url(./images/search-icon.png) 55px center/14px 14px
-    no-repeat;
+  background: var(--primary-color) url(./images/search-icon.png) 55px
+    center/14px 14px no-repeat;
   padding-left: 82px;
 }
 .hero-container .button:hover {
-  background-color: transparent;
-  color: #593de4;
+  background-color: var(--button-hover-background-color);
+  color: var(--primary-color);
   background-image: url(./images/search-icon-hover.png);
 }
