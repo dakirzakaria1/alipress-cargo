@@ -11,7 +11,7 @@ Alipress Cargo is a fast, simple, and reliable solution for shipping packages an
 
 ## Demo
 
-You can view a live demo of the project <a href="https://alipress-cargo.vercel.app/" target="_blank">here</a>..
+You can view a live demo of the project <a href="https://alipress-cargo.vercel.app/" target="_blank">here</a>.
 
 ## Technologies Used
 
