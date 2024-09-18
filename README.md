@@ -8,7 +8,6 @@ Alipress Cargo is a fast, simple, and reliable solution for shipping packages an
 
 - [Demo](#demo)
 - [Technologies Used](#technologies-used)
-- [Folder Structure](#folder-structure)
 
 ## Demo
 
@@ -20,19 +19,3 @@ You can view a live demo of the project [here](#).
 - CSS3
 - Google Fonts
 
-## Folder Structure
-
-alipress-cargo/
-│
-├── images/
-│   ├── cover.png
-│   ├── delivery-address-icon.png
-│   ├── hero-bg-image.png
-│   ├── parcel-details-icon.png
-│   ├── pickup-address-icon.png
-│   ├── search-icon.png
-│   ├── ship-date-icon.png
-│
-├── index.html
-├── README.md
-└── styles.css
